@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cv"
+        android:layout_marginBottom="2dp">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:clickable="true"
+            android:background="?android:attr/selectableItemBackground"
+            >
+
+            <TextView
+                android:id="@+id/itemName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="17dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="13dp"
+                android:text="Movie Name"
+                android:textSize="18dp"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/itemCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/itemName"
+                android:layout_alignStart="@+id/itemName"
+                android:layout_below="@+id/itemName"
+                android:text="Crime, Drama" />
+
+            <ImageView
+                android:id="@+id/ratingImg"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:scaleType="fitXY"
+                android:layout_alignTop="@+id/itemName"
+                android:layout_toLeftOf="@+id/avgcost"
+                android:layout_toStartOf="@+id/avgcost"
+                app:srcCompat="@drawable/usdollar" />
+
+            <TextView
+                android:id="@+id/quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/avgcost"
+                android:layout_alignRight="@+id/avgcost"
+                android:layout_below="@+id/ratingImg"
+                android:text="2016"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/avgcost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="25dp"
+                android:layout_marginRight="25dp"
+                android:text="9.2"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
